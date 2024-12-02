@@ -11,7 +11,7 @@ pipeline {
     
     // TBE:使用するストレージのアクセス情報を指定する
     STORAGESERVICE = 'aws-s3'
-    AWS_S3_BUCKET_NAME = 'und-jenkins-agent'
+    AWS_S3_BUCKET_NAME = 'ltxund-jenkins-storage'
     AWS_REGION = 'ap-northeast-1'
     AWS = credentials('AWS_CRED')
     // STORAGESERVICE = 'nexus'
