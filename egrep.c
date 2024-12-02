@@ -88,6 +88,7 @@
 extern char *optarg;
 extern int optind;
 char *progname;
+char *progname2;
 
 int cflag, iflag, eflag, fflag, lflag, nflag; /* SVID flags */
 int sflag, hflag;   /* v7, v8, bsd */
