@@ -84,6 +84,7 @@
 #define META  "\n^$.[]()?+*|\\" /* egrep meta-characters */
 #define SS2 '\216'    /* EUC Katakana (or Chinese2) prefix */
 #define SS3 '\217'    /* EUC Kanji2 (or Chinese3) prefix */
+#define SS4 '\219' /* This is for test change*/
 
 extern char *optarg;
 extern int optind;
