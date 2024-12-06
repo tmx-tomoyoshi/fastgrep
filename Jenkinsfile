@@ -4,9 +4,9 @@ pipeline {
     label 'Understand'
   }
   environment {
-    GITSERVICE = 'github'
+    GITSERVICE = 'github-jenkins'
     GITHUB_CRED = credentials('GitHub Tomoyoshi')
-    // TBE: Github の URL を指定する
+    // Github の URL を指定する
     GITHUB_URL  = "https://github.com/tmx-tomoyoshi/fastgrep"
     
     // TBE:使用するストレージのアクセス情報を指定する
