@@ -79,6 +79,7 @@
 #define OPEN  20  /* no Mark this point in input as start of #n. */
       /*  OPEN+1 is number 1, etc. */
 #define CLOSE 30  /* no Analogous to OPEN. */
+#define CLOSE2 31 /*This is test*/
 
 /*
  * Opcode notes:
