@@ -1,5 +1,5 @@
-GIT_REPO_OWNER="$(echo "${GITHUB_URL}" | sed -E 's,.*[:/]([^/]*)/[^/]*.git,\1,')"
-GIT_REPO_NAME="$(echo "${GITHUB_URL}" | sed -E 's,.*/([^/]*).git,\1,')"
+GIT_REPO_OWNER="${GITHUB_URL%/*}"
+GIT_REPO_NAME="${GITHUB_URL##*/}"
 
 # PRか否か
 is_change_request() {
