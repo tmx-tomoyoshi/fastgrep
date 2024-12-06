@@ -30,8 +30,11 @@ pipeline {
           }
       }
       steps {
-        sh 'env'
-        sh './understand/analyze.sh --upload'
+        sh '''
+          env
+          chmod 755 ./understand/analyze.sh
+          ./understand/analyze.sh --upload
+        '''
       }
     }
     stage('PRレビュー') {
@@ -40,6 +43,8 @@ pipeline {
       }
       steps {
         sh '''
+          chmod 755 ./understand/generate-graphs.sh
+          chmod 755 ./understand/review-pr.sh
           ./understand/generate-graphs.sh > review-comment.txt
           ./understand/review-pr.sh review-comment.txt
         '''
@@ -48,6 +53,7 @@ pipeline {
   }
   post {
     cleanup {
+      sh 'chmod 755 ./understand/clean.sh'
       sh './understand/clean.sh'
     }
   }
