@@ -8,6 +8,7 @@ pipeline {
     GITHUB_CRED = credentials('GitHub Tomoyoshi')
     // TBE: Gitea の URL を指定する
     GITHUB_URL  = "https://github.com/tmx-tomoyoshi/fastgrep"
+    GITHUB_REPOSITORY = "https://github.com/tmx-tomoyoshi/fastgrep"
     
     // TBE:使用するストレージのアクセス情報を指定する
     STORAGESERVICE = 'aws-s3'
