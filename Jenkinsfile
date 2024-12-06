@@ -1,7 +1,7 @@
 pipeline {
   agent {
     // TBE:Jenkins エージェントのラベルを指定する
-    label 'linux && understand'
+    label 'Understand'
   }
   environment {
     GITSERVICE = 'github'
