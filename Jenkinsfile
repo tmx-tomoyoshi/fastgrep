@@ -5,7 +5,7 @@ pipeline {
   }
   environment {
     GITSERVICE = 'github'
-    GITHUB_CRED = credentials('GITHUB_CRED')
+    GITHUB_CRED = credentials('GitHub Tomoyoshi')
     // TBE: Gitea の URL を指定する
     GITHUB_URL  = "https://github.com/tmx-tomoyoshi/fastgrep"
     
